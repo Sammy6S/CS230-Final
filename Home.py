@@ -61,5 +61,6 @@ st.write(volc_elevation.sort_values("Elevation (m)"))
 column_select = st.multiselect("Select columns to be shown: ", volc.columns)
 st.write(volc[column_select])
 
-volc.plot(kind = "bar")
+volcBar = volc.Country
+volcBar.plot(kind = "bar")
 st.pyplot()

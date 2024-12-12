@@ -15,7 +15,7 @@ import streamlit as st
 
 
 st.set_page_config(page_title="Global Volcanoes", page_icon=":volcano:")
-st.sidebar.title("\t Toggle :gear:")
+st.sidebar.header("\t Toggle :gear:")
 
 pg = st.navigation([st.Page("pages/_🗺_️Map.py")])
 pg.run()

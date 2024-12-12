@@ -11,6 +11,7 @@ This program is takes the cvs data of volcanoes and presents them in different w
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
+import pydeck as pdk
 import streamlit as st
 
 

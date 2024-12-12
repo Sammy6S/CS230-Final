@@ -17,9 +17,9 @@ view_state = pdk.ViewState(latitude=volcLat["lat"].mean(), longitude=volcLat["lo
 
 layer1 = pdk.Layer(type = 'ScatterplotLayer', data=volcLat, get_position='[lon, lat]', get_radius=3000, get_color=[200,0,0],   pickable=True)
 
-layer2 = pdk.Layer('ScatterplotLayer', data=volcLat, get_position='[lon, lat]', get_radius=300, get_color=[0,0,255], pickable=True)
+layer2 = pdk.Layer('ScatterplotLayer', data=volcLat, get_position='[lon, lat]', get_radius=300, get_color=[150,30,255], pickable=True)
 
-tool_tip = {"html": "<b>{Volcano Name}</b>{Elevation (m)}", "style": { "backgroundColor": "orange", "color": "white"}}
+tool_tip = {"html": "<b>{Volcano Name}</b><br>{Elevation (m)}m", "style": { "backgroundColor": "orange", "color": "white"}}
 
 map = pdk.Deck(map_style='mapbox://styles/mapbox/streets-v12', initial_view_state=view_state, layers=[ layer1, layer2], tooltip= tool_tip)
 

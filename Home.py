@@ -32,3 +32,5 @@ volc_country = volc[(volc.Country.isin([country_radio]))]
 
 st.title(f"Volcanoes in {country_radio}")
 st.write(volc_country)
+
+elevation_slider = st.slider("Slide for Elevation",min(volc["Elevation(m)"]) , max(volc["Elevation(m)"])

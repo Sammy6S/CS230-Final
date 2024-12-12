@@ -2,8 +2,8 @@ import pandas as pd
 
 import streamlit as st
 
-st.write("Hello World")
+st.write("Global Volcanoes")
 path = "volcanoes.csv"
-dfpct = pd.read_csv(path)
+volc = pd.read_csv(path)
 
-st.write(dfpct)
+st.write(volc)

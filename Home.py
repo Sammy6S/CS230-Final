@@ -46,5 +46,5 @@ def findMaxMin(lst, m = "max"):
         i = l
     return i
 
-elevation_slider = st.slider("Slide for Elevation",findMaxMin(volc["Elevation (m)"], "min") , findMaxMin(volc["Elevation (m)"], "max"), 100)
+elevation_slider = st.slider("Slide for Elevation",findMaxMin(volc["Elevation (m)"], "min") , findMaxMin(volc["Elevation (m)"], "max"), 0, 100)
 

@@ -20,10 +20,12 @@ path = "volcanoes.csv"
 volc = pd.read_csv(path, delimiter=",", comment="%")
 volc.set_index("Volcano Number")
 
-
 st.write(volc)
 
 countries=[]
+for c in volc.Country:
+  if c !in countries:
+    countries.add(c)
 
 country_radio = st.radio("Please select a Country: ", countries)
 st.sidebar.write(country_radio)

@@ -28,4 +28,4 @@ for c in volc.Country:
     countries.append(c)
 
 country_radio = st.sidebar.radio("Please select a Country: ", sorted(countries))
-volc_country = volc.Country.isin(country_radio)
+st.write(volc.Country.isin(country_radio))

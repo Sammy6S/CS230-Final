@@ -49,4 +49,4 @@ def findMaxMin(lst, m = "max"):
 
 elevation_slider = st.slider("Slide for Elevation (+/-50m)",findMaxMin(volc["Elevation (m)"], "min") , findMaxMin(volc["Elevation (m)"], "max"), 0, 100)
 volc_elevation = volc[(volc["Elevation (m)"] >= (elevation_slider - 50)) & (volc["Elevation (m)"] <= (elevation_slider + 50))]
-st.write(volc_elevation)
+st.write(volc_elevation.sort_value("Elevation (m)"))

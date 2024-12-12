@@ -13,9 +13,9 @@ volcLat = volc[["Latitude","Longitude"]]
 volcLat.rename(columns={"Latitude":"lat", "Longitude": "lon"}, inplace= True)
 st.map(volcLat)
 
-view_state = pdk.ViewState(latitude=volcLat["lat"].mean(), longitude=volcLat["lon"].mean(), zoom=11, pitch=0) 
+view_state = pdk.ViewState(latitude=volcLat["lat"].mean(), longitude=volcLat["lon"].mean(), zoom=50, pitch=0) 
 
-layer1 = pdk.Layer(type = 'ScatterplotLayer', data=volcLat, get_position='[lon, lat]', get_radius=500, get_color=[0,200,0],   pickable=True)
+layer1 = pdk.Layer(type = 'ScatterplotLayer', data=volcLat, get_position='[lon, lat]', get_radius=1000, get_color=[0,200,0],   pickable=True)
 
 layer2 = pdk.Layer('ScatterplotLayer', data=volcLat, get_position='[lon, lat]', get_radius=300, get_color=[0,0,255], pickable=True)
 

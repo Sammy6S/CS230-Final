@@ -34,7 +34,7 @@ volc_country = volc[(volc.Country.isin([country_radio]))]
 st.title(f"Volcanoes in {country_radio}")
 st.write(volc_country)
 
-column_select = st.sidebar.multiselect("Select columns to be shown: ", volc.colunms)
+column_select = st.sidebar.multiselect("Select columns to be shown: ", volc.columns)
 
 st.title("Volcano Elevation")
 def findMaxMin(lst, m = "max"):

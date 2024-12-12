@@ -63,4 +63,8 @@ st.write(volc[column_select])
 
 volcBar = volc[elevation_slider]
 volcBar.plot(kind = "bar")
+plt.xlabel("Year")
+plt.ylabel("Sales Percentage")
+plt.title("Volcano data for each country")
+plt.legend(countries)
 st.pyplot()

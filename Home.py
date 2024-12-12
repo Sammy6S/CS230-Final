@@ -13,9 +13,6 @@ import numpy as np
 import matplotlib.pyplot as plt
 import streamlit as st
 
-home = st.navigation([st.Page("Map.py")])
-home.run()
-
 st.set_page_config(page_title="Global Volcanoes", page_icon=":volcano:")
 st.sidebar.title("\t Toggle :gear:")
 

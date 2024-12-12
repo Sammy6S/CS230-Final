@@ -15,7 +15,7 @@ import streamlit as st
 st.set_page_config(page_title="Global Volcanoes", page_icon=":volcano:")
 st.sidebar.title("\t Toggle :gear:")
 
-st.image("Augustine_volcano.jpg", width="50%")
+st.image("Augustine_volcano.jpg", width=50)
 st.title("Global Volcanoes")
 path = "volcanoes.csv"
 volc = pd.read_csv(path, delimiter=",", comment="%")

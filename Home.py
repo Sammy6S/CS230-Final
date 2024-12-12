@@ -13,7 +13,8 @@ import numpy as np
 import matplotlib.pyplot as plt
 import streamlit as st
 
-streamlit run Home.py
+pg = st.navigation([st.Page("pages/_🗺_️Map.py")])
+pg.run()
 
 st.set_page_config(page_title="Global Volcanoes", page_icon=":volcano:")
 st.sidebar.title("\t Toggle :gear:")
@@ -58,5 +59,3 @@ st.write(volc_elevation.sort_values("Elevation (m)"))
 
 column_select = st.multiselect("Select columns to be shown: ", volc.columns)
 st.write(volc[column_select])
-
-st.balloons()

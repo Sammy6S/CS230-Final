@@ -7,7 +7,7 @@ import numpy as np
 import streamlit as st
 
 st.set_page_config(page_title="Global Volcanoes", page_icon=":volcano:")
-st.sidebar.title("## Toggle :gear:")
+st.sidebar.title("/t Toggle :gear:")
 
 st.title("Global Volcanoes")
 path = "volcanoes.csv"

@@ -24,7 +24,7 @@ st.write(volc)
 
 countries=[]
 for c in volc.Country:
-  if c !in countries:
+  if c not in countries:
     countries.add(c)
 
 country_radio = st.radio("Please select a Country: ", countries)

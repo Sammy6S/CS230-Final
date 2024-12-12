@@ -18,7 +18,7 @@ import streamlit as st
 st.set_page_config(page_title="Global Volcanoes", page_icon=":volcano:")
 st.sidebar.header("\t Toggle :gear:")
 
-pg = st.navigation([st.Page("pages/_🗺_️Map.py")])
+pg = st.sidebar.navigation([st.Page("pages/_🗺_️Map.py")])
 pg.run()
 
 st.image("Augustine_volcano.jpg", width=500)
@@ -34,7 +34,7 @@ for c in volc.Country:
   if c not in countries:
     countries.append(c)
 
-country_radio = st.radio("Please select a Country: ", sorted(countries))
+country_radio = st.sidebar.radio("Please select a Country: ", sorted(countries))
 volc_country = volc[(volc.Country.isin([country_radio]))]
 
 st.title(f"Volcanoes in {country_radio}")

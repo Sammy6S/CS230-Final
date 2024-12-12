@@ -30,5 +30,6 @@ for c in volc.Country:
 country_radio = st.sidebar.radio("Please select a Country: ", sorted(countries))
 volc_country = volc[(volc.Country.isin([country_radio]))]
 
-st.title(f"Volcanoes in :canada: {country_radio}")
+st.title(f"Volcanoes in {country_radio}")
+st.write(":canada:")
 st.write(volc_country)

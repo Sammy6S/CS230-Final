@@ -17,7 +17,8 @@ import streamlit as st
 st.set_page_config(page_title="Global Volcanoes", page_icon=":volcano:")
 st.sidebar.header("\t Toggle :gear:")
 
-
+pg = st.navigation([st.Page("pages/_🗺_️Map.py")])
+pg.run()
 
 st.image("Augustine_volcano.jpg", width=500)
 st.title("Global Volcanoes")
@@ -59,3 +60,6 @@ st.write(volc_elevation.sort_values("Elevation (m)"))
 
 column_select = st.multiselect("Select columns to be shown: ", volc.columns)
 st.write(volc[column_select])
+
+volc.plot(kind = "bar")
+st.pyplot()

@@ -33,6 +33,7 @@ volc_country = volc[(volc.Country.isin([country_radio]))]
 st.title(f"Volcanoes in {country_radio}")
 st.write(volc_country)
 
+st.title("Volcano Elevation")
 def findMaxMin(lst, m = "max"):
   i = lst[0]
   if m.lower() == "max":
@@ -47,4 +48,5 @@ def findMaxMin(lst, m = "max"):
     return i
 
 elevation_slider = st.slider("Slide for Elevation",findMaxMin(volc["Elevation (m)"], "min") , findMaxMin(volc["Elevation (m)"], "max"), 0, 100)
-
+volc_elevation = volc[(volc["Elevation (m)"].isin([elevation_slider]))]
+st.write(volc_elevation)

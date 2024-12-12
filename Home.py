@@ -61,10 +61,5 @@ st.write(volc_elevation.sort_values("Elevation (m)"))
 column_select = st.multiselect("Select columns to be shown: ", volc.columns)
 st.write(volc[column_select])
 
-volcBar = volc[(volc.Country.isin([countries]))]
-volcBar.plot(kind = "bar")
-plt.xlabel("Year")
-plt.ylabel("Sales Percentage")
-plt.title("Volcano data for each country")
-plt.legend(countries)
+volc.plot()
 st.pyplot()

@@ -9,7 +9,7 @@ volc = pd.read_csv(path, delimiter=",", comment="%")
 volc.set_index("Volcano Number")
 
 st.title("Volcano Map")
-volcLat = volc[["Latitude","Longitude"]]
+volcLat = volc[["Latitude","Longitude","Elevation (m)","Volcano Name"]]
 volcLat.rename(columns={"Latitude":"lat", "Longitude": "lon"}, inplace= True)
 st.map(volcLat)
 

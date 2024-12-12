@@ -56,3 +56,5 @@ st.write(volc_elevation.sort_values("Elevation (m)"))
 
 column_select = st.multiselect("Select columns to be shown: ", volc.columns)
 st.write(volc[column_select])
+
+st.balloons()

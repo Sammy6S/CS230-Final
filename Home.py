@@ -19,7 +19,7 @@ st.title("Global Volcanoes")
 path = "volcanoes.csv"
 volc = pd.read_csv(path, delimiter=",")
 volc.drop([0])
-volc.set_index("Volcano Number")
+
 
 st.write(volc)
 

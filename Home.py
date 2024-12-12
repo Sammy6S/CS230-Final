@@ -13,7 +13,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import streamlit as st
 
-pg = st.navigation([st.Page("pages/_🗺_️Map.py")])
+pg = st.navigation([st.Page("_🗺_️Map.py")])
 pg.run()
 
 st.set_page_config(page_title="Global Volcanoes", page_icon=":volcano:")

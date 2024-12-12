@@ -17,7 +17,7 @@ st.sidebar.title("\t Toggle :gear:")
 
 st.title("Global Volcanoes")
 path = "volcanoes.csv"
-volc = pd.read_csv(path, comment="-", delimiter=",")
+volc = pd.read_csv(path, comment="Global Volcanism Program", delimiter=",")
 volc.set_index("Volcano Number", inplace=True)
 
 st.write(volc)

@@ -29,4 +29,6 @@ for c in volc.Country:
 
 country_radio = st.sidebar.radio("Please select a Country: ", sorted(countries))
 volc_country = volc[(volc.Country.isin([country_radio]))]
+
+st.heading(Selected Country)
 st.write(volc_country)

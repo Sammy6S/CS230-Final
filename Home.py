@@ -28,5 +28,5 @@ for c in volc.Country:
     countries.append(c)
 
 country_radio = st.sidebar.radio("Please select a Country: ", sorted(countries))
-st.sidebar.write(country_radio)
+st.sidebar.success(country_radio)
 

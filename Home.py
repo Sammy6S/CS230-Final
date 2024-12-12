@@ -21,7 +21,7 @@ path = "volcanoes.csv"
 volc = pd.read_csv(path, delimiter=",", comment="%")
 volc.set_index("Volcano Number")
 
-column_select = st.sidebar.multiselect("Select columns to be shown: ", volc.columns)
+column_select = st.multiselect("Select columns to be shown: ", volc.columns)
 st.write(volc[column_select])
 
 countries=[]

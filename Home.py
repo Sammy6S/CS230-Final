@@ -10,6 +10,7 @@ This program is takes the cvs data of volcanoes and presents them in different w
 
 import pandas as pd
 import numpy as np
+import matplotlib.pyplot as plt
 import streamlit as st
 
 st.set_page_config(page_title="Global Volcanoes", page_icon=":volcano:")

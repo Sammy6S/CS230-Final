@@ -64,3 +64,5 @@ st.write(volc[column_select])
 
 volc_elevation.plot()
 st.pyplot()
+
+st.map(volc)

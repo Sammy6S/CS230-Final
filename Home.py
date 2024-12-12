@@ -12,7 +12,7 @@ import pandas as pd
 import numpy as np
 import streamlit as st
 
-st.image("Auguatine_volcano.jpg")
+st.image("Augustine_volcano.jpg")
 st.set_page_config(page_title="Global Volcanoes", page_icon=":volcano:")
 st.sidebar.title("\t Toggle :gear:")
 

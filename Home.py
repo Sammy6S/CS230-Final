@@ -65,5 +65,5 @@ st.write(volc[column_select])
 volc_elevation.plot()
 st.pyplot()
 
-volcLat = volc["Latitude","Longitude"]
+volcLat = volc[["Latitude","Longitude"]]
 st.map(volcLat)

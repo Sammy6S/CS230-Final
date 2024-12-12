@@ -38,12 +38,12 @@ def findMaxMin(lst, m = "max"):
   if m.lower() == "max":
     for l in lst:
       if l >= i:
-        i = i
+        i = l
     return i
   elif m.lower() == "min":
     for l in lst:
       if l <= i:
-        i = i
+        i = l
     return i
 
 elevation_slider = st.slider("Slide for Elevation",findMaxMin(volc["Elevation (m)"], "min") , findMaxMin(volc["Elevation (m)"], "max"), 10)

@@ -27,6 +27,6 @@ for c in volc.Country:
   if c not in countries:
     countries.append(c)
 
-country_radio = st.siderbar.radio("Please select a Country: ", countries)
+country_radio = st.sidebar.radio("Please select a Country: ", countries)
 st.sidebar.write(country_radio)
 

@@ -21,8 +21,7 @@ path = "volcanoes.csv"
 volc = pd.read_csv(path, delimiter=",", comment="%")
 volc.set_index("Volcano Number")
 
-column_select = st.multiselect("Select columns to be shown: ", volc.columns)
-st.write(volc[column_select])
+st.write(volc)
 
 countries=[]
 for c in volc.Country:
@@ -53,3 +52,6 @@ elevation_slider = st.slider("Slide for Elevation (+/-50m)",findMaxMin(volc["Ele
 volc_elevation = volc[(volc["Elevation (m)"] >= (elevation_slider - 50)) & (volc["Elevation (m)"] <= (elevation_slider + 50))]
 volc_elevation.insert(0, "Elevation (m)", volc_elevation.pop("Elevation (m)"))
 st.write(volc_elevation.sort_values("Elevation (m)"))
+
+column_select = st.multiselect("Select columns to be shown: ", volc.columns)
+st.write(volc[column_select])

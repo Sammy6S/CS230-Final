@@ -18,5 +18,7 @@ st.sidebar.title("\t Toggle :gear:")
 st.title("Global Volcanoes")
 path = "volcanoes.csv"
 volc = pd.read_csv(path, comment="-", delimiter=",")
+volc.set_index("Volcano Number", inplace="True")
 
+country_radio = st.radio("Please select a Country: ", langs)
 st.write(volc)

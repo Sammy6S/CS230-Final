@@ -1,5 +1,11 @@
 """
-Name 
+Name: Zixian (Sammy) Bai
+CS230: Section 4
+Data: Volcanoes
+URL: https://cs230-final-sk2jws3eebfx6pvniywl89.streamlit.app/
+
+Description:
+This program is takes the cvs data of volcanoes and presents them in different ways.
 """
 
 import pandas as pd

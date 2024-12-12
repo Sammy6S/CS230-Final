@@ -65,6 +65,7 @@ st.write(volc[column_select])
 volc_elevation.plot()
 st.pyplot()
 
+st.title("Volcano Map")
 volcLat = volc[["Latitude","Longitude"]]
 volcLat.rename(columns={"Latitude":"lat", "Longitude": "lon"}, inplace= True)
 st.map(volcLat)

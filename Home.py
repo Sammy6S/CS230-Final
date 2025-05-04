@@ -18,7 +18,7 @@ import streamlit as st
 st.set_page_config(page_title="Global Volcanoes", page_icon=":volcano:")
 st.sidebar.header("\t Toggle :gear:")
 
-pg = st.navigation([st.Page("pages/Map.py")])
+pg = st.navigation([st.Page("Map.py")])
 pg.run()
 
 st.image("Augustine_volcano.jpg", width=500)
